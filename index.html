@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Lester Developer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      height: 100vh;
+	  /*line-height:20px;*/
+    }
+    .sidebar {
+      width: 20%;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .sidebar h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .sidebar img {
+      width: 100%;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .skills {
+      list-style: none;
+      padding: 0;
+    }
+    .skills li {
+      margin: 10px 0;
+    }
+    .content {
+      width: 80%;
+      padding: 20px 40px;
+      box-sizing: border-box;
+    }
+    .content h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .work {
+      margin-bottom: 20px;
+    }
+    .work h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    .work p {
+      margin: 0;
+    }
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .sidebar{
+        width: 100%;
+      }
+	  .content{
+        width: 100%;
+		padding: 10px;
+      }
+      .content h2 {
+        text-align: center;
+      }
+	  .imgPortfolio{
+	  	max-width: 100% !important;
+		margin-right:0px !important;
+		margin-bottom:2% !important;
+	  }
+	  .pContenuto{
+	  	padding-right:0px;
+	  }
+    }
+	
+	.imgPortfolio{
+	  	max-width: 23.5%;
+		margin-right:1%;
+		margin-bottom:1%;
+	  }
+	  .pContenuto{
+	  	padding-right:20px;
+	  }
+	
+	 .work img {
+      cursor: pointer;
+    }
+    .work img:hover {
+      filter: brightness(70%);
+    }
+
+    /* Popup styles */
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    .popup-overlay img {
+      max-width: 90%;
+      max-height: 90%;
+      box-shadow: 0 0 10px white;
+    }
+    .popup-overlay.active {
+      display: flex;
+    }
+    .popup-overlay .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 1001;
+    }
+	.text-warning{
+	  color:#ffc107;
+	}
+	.text-info{
+	  color:#0dcaf0;
+	}
+	.text-grey{
+	  color:#666666;
+	}
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h1 class="text-info">Marco Masina Developer</h1>
+    <img src="img/profile1.jpg" alt="Lester's Photo" />
+    <ul class="skills">
+	  <li>Web application development</li>
+	  <li>Custom website and e-commerce development</li>
+	  <li>WordPress and WooCommerce website development</li>
+	  <li>Development of RESTful and custom APIs</li>
+	</ul>
+	<br><strong class="text-warning">Technologies:</strong><br>
+	<small>
+	  HTML & CSS, Bootstrap, JavaScript, jQuery, Node.js, JSON, PHP, MySQL, SQL Server, PostgreSQL
+	</small>
+  </div>
+  <div class="content">
+    <h2>Some works</h2>
+    <div class="work">
+      <h3>GOW:</h3>
+      <p class="pContenuto">
+		Browser-accessible business management system, modular and highly configurable according to the client's specific needs.<br><br>
+		<small class="text-grey"> 
+		Supports multi-user functionality with customizable roles: administrator, employee, customer, agent, supplier, maintenance technician, and other specific users.<br>
+		Includes an advanced order entry system with product search, quantity selection, size and color variations, and other features.<br>
+		Manages production, inventory with stock control, reorder alerts, purchase management, and barcode scanning.<br>
+		Exports documents such as orders, quotes, and delivery notes in PDF format with customized graphics.<br>
+		Product catalog with fully configurable features, hierarchies, and options.<br>
+		Dynamic price lists configurable by supplier, agent, customer, or price ranges.<br>
+		Support module for entering and managing requests, with progress status tracking.<br>
+		Generates customized Excel reports based on customer needs.<br>
+		The system is scalable and can be adapted or expanded with custom developments.<br>
+		It is fully responsive, optimized for desktops, laptops, tablets, and smartphones. In some cases, the interface has been tailored to the devices most used by the customer.
+		</small>
+	  </p>
+	  <div style="margin-top:20px;">
+	  <img src="img/works/works_1.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/works_2.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/works_3.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/works_4.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/works_5.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/works_6.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/works_7.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/works_8.png" alt="portfolio" class="imgPortfolio" />
+	  </div>
+    </div>
+    <div class="work">
+      <h3>MLM:</h3>
+      <p class="pContenuto">
+	    Complete software for managing multilevel marketing systems, fully configurable for commissions, bonuses, and matrix structures.<br><br>
+		<small class="text-grey"> 
+        Supports plans with defined durations (subscriptions) or one-time payments without expiration.<br>
+        <strong>Users:</strong> custom dashboard, plan management, referral links, transaction history, withdrawal requests, and network visualization in table or tree format.<br>
+        <strong>Admin:</strong> users management, monitoring of active/expired plans, and management of plans and transactions.<br>
+        <strong>Superuser:</strong> fund management, admin permissions, withdrawal approvals, and management of commissions and matrices.
+		</small>
+	  </p>
+	  <div style="margin-top:20px;">
+	  <img src="img/works/mlm_1.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/mlm_6.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/mlm_5.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/mlm_7.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/mlm_8.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/mlm_2.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/mlm_3.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/mlm_4.png" alt="portfolio" class="imgPortfolio" />
+	  </div>
+    </div>
+    <div class="work">
+      <h3>Websites ed ecommerce:</h3>
+      <p class="pContenuto">
+	    Sviluppo di siti web personalizzati con frontend basato su Bootstrap.<br>
+        Creazione e personalizzazione di siti WordPress/WooCommerce con builder come Elementor, BeBuilder e WPBakery.<br>
+        Sviluppo di ecommerce Prestashop e implementazione di funzionalità custom in PHP e JavaScript.<br>
+        Integrazione tra gestionali e WooCommerce/Prestashop per sincronizzazione automatica di prodotti e ordini.
+	  </p>
+	  <div style="margin-top:20px;">
+	  <img src="img/works/sites_1.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/sites_2.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/sites_3.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/sites_4.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/sites_30.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/sites_31.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/sites_24.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/sites_21.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/sites_22.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/sites_23.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/sites_8.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/sites_29.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/sites_10.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/sites_11.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/sites_28.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/sites_25.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/sites_26.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/sites_27.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/sites_16.png" alt="portfolio" class="imgPortfolio" />
+	  <img src="img/works/sites_18.png" alt="portfolio" class="imgPortfolio" />
+	  </div>
+    </div>
+  </div>
+  
+  <!-- Popup HTML -->
+  <div class="popup-overlay" id="popup">
+    <span class="close-btn" id="closePopup">&times;</span>
+    <img id="popupImage" src="" alt="popup">
+  </div>
+
+  <script>
+    // JavaScript for popup functionality
+    const images = document.querySelectorAll('.work img');
+    const popup = document.getElementById('popup');
+    const popupImage = document.getElementById('popupImage');
+    const closePopup = document.getElementById('closePopup');
+
+    images.forEach(image => {
+      image.addEventListener('click', () => {
+        popupImage.src = image.src;
+        popup.classList.add('active');
+      });
+    });
+
+    closePopup.addEventListener('click', () => {
+      popup.classList.remove('active');
+    });
+
+    // Close popup on clicking outside the image
+    popup.addEventListener('click', (e) => {
+      if (e.target === popup) {
+        popup.classList.remove('active');
+      }
+    });
+  </script>
+  
+</body>
+</html>
